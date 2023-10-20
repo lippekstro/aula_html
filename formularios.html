@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        form {
+            margin: 1rem;
+        }
+
+        input,
+        textarea,
+        select {
+            margin-left: 1rem;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
+
+        .form-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
+
+        fieldset {
+            margin: 1rem;
+        }
+
+        .obr {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index.html">Aula HTML</a>
+    <a href="aulacss.html">Aula CSS</a>
+    <a href="formularios.html">Aula Forms</a>
+    <a href="acessibilidade.html">Aula de Acessibilidade</a>
+
+    <form action="#" method="get" autocomplete="on" enctype="multipart/form-data">
+        <!-- coloque novalidate para nao validar os dados e fazer testes -->
+        <fieldset>
+            <legend>Campos de Login</legend>
+            <div class="form-item">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" size="1" value="Fulano">
+            </div>
+
+            <div class="form-item">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" autofocus>
+
+            </div>
+
+        </fieldset>
+
+        <div class="form-item">
+            <label for="numero">Numero: </label>
+            <input type="number" name="numero" id="numero" max="10" min="5" step="0.5">
+        </div>
+
+        <div class="form-item">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-item">
+            <label for="busca">Busca: </label>
+            <input type="search" name="busca" id="busca">
+        </div>
+
+        <fieldset>
+            <legend>Linguagem Favorita</legend>
+            <div class="form-item">
+                <input type="radio" name="lang" id="js" value="js">
+                <label for="js">JS</label>
+            </div>
+            <div class="form-item">
+                <input type="radio" name="lang" id="php" value="php">
+                <label for="php">PHP</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Linguagens que você sabe</legend>
+            <div class="form-item">
+                <input type="checkbox" name="conhecimento[]" id="phpc" value="php">
+                <label for="phpc">PHP</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="conhecimento[]" id="jsc" value="js">
+                <label for="jsc">JS</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="conhecimento[]" id="python" value="python">
+                <label for="python">Python</label>
+            </div>
+        </fieldset>
+
+        <div class="form-item">
+            <label for="cor_fav">Cor Favorita: </label>
+            <input type="color" name="cor_fav" id="cor_fav" value="#FFFFFF">
+        </div>
+
+        <div class="form-item">
+            <label for="nascimento">Data de Nascimento: </label>
+            <input type="date" name="nascimento" id="nascimento" max="2023-09-19">
+        </div>
+
+        <div class="form-item">
+            <label for="foto">Foto de Perfil: </label>
+            <input type="file" name="foto" id="foto" accept="image/*">
+        </div>
+
+
+        <input type="hidden" name="id_produto" value="500">
+
+        <div class="form-item">
+            <label for="transporte">Do que você vem para o curso: </label>
+            <select name="transporte" id="transporte">
+                <option value="onibus">Onibus</option>
+                <option value="bicicleta">Bicicleta</option>
+                <option value="pe" selected>A pé</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <label for="desc">Descrição: </label>
+            <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-item">
+            <label for="leitura">Apenas Leitura:</label>
+            <input type="text" name="leitura" id="leitura" value="Somente Leitura" readonly>
+        </div>
+
+        <div class="form-item">
+            <label for="desabilitado">Desabilitado</label>
+            <input type="text" name="desabilitado" id="desabilitado" value="Campo Inativo" disabled>
+        </div>
+
+        <div class="form-item">
+            <label for="tammaximo">Campo com caracteres limitados (somente 4)</label>
+            <input type="text" name="tammaximo" id="tammaximo" maxlength="4">
+        </div>
+
+        <div class="form-item">
+            <label for="placeh">Campo com Placeholder</label>
+            <input type="text" name="placeh" id="placeh" placeholder="Digite seu nome">
+        </div>
+
+        <div class="form-item">
+            <label for="obrigatorio">Campo obrigatorio<span class="obr">*</span></label>
+            <input type="text" name="obrigatorio" id="obrigatorio" required>
+        </div>
+
+        <div class="form-item">
+            <input type="submit" value="Enviar">
+        </div>
+
+        <div class="form-item">
+            <input type="reset" value="Limpar Formulario">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

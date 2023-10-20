@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teste Git</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        section {
+            width: 50%;
+            margin: 1rem auto;
+        }
+
+        p {
+            text-align: justify;
+            margin: 1rem 0;
+        }
+
+        header {
+            background-color: #545014;
+            padding: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #545014;
+            padding: 1rem;
+            color: white;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: white;
+            margin: 0 1rem;
+            padding: 1rem;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .navlinks a:hover {
+            background-color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .navlinks {
+            display: flex;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        :focus {
+            outline: 3px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" aria-label="Home do Site">
+                <a href="index.html" aria-label="Home do Site">
+                    <img src="imgs/favicon.ico" alt="Home do Site">
+                </a>
+            </div>
+
+            <div class="navlinks" aria-label="links de navegação global do site">
+                <a href="index.html"><span class="material-symbols-outlined" role="img" aria-hidden="true">home</span>Aula HTML</a>
+                <a href="aulacss.html"><span class="material-symbols-outlined" role="img" aria-hidden="true">css</span>Aula CSS</a>
+                <a href="formularios.html"><span class="material-symbols-outlined" role="img" aria-hidden="true">assignment</span>Aula Forms</a>
+                <a href="acessibilidade.html"><span class="material-symbols-outlined" role="img" aria-hidden="true">accessibility</span>Aula de Acessibilidade</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-label="seção do site que fala de shows">
+            <h1>SHOWS</h1>
+            <img src="imgs/orquestra.jpg" alt="vista de uma orquestra no palco" width="100%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid minima deleniti fugit
+                nesciunt, eligendi, libero quasi expedita a omnis, laboriosam aliquam magni voluptatum illum!
+                Consequuntur, fuga id? Aperiam, dsicta?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptatum enim earum id vel!
+                Ratione, vel ducimus, labore facilis ex asperiores deleniti, doloribus neque maiores tempora quas quam
+                quaerat eaque.</p>
+            <a href="" class="btn" >Compre Ingressos</a>
+        </section>
+
+        <section aria-label="seção do site que fala de cidades para turismo">
+            <h1>CIDADES</h1>
+            <img src="imgs/city.jpg" alt="vista panoramica de uma cidade" width="100%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid minima deleniti fugit
+                nesciunt, eligendi, libero quasi expedita a omnis, laboriosam aliquam magni voluptatum illum!
+                Consequuntur, fuga id? Aperiam, dicta?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptatum enim earum id vel!
+                Ratione, vel ducimus, labore facilis ex asperiores deleniti, doloribus neque maiores tempora quas quam
+                quaerat eaque.</p>
+            <a href="" class="btn">Compre uma passagem</a>
+        </section>
+    </main>
+
+    <footer>
+        Todos os Direitos Reservados &copy;
+    </footer>
+</body>
+
+</html>

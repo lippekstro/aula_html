@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><!-- definindo o idioma original da pagina -->
+
+<head>
+    <meta charset="UTF-8"><!-- adiciona o conjunto de caracteres -->
+    <meta name="description" content="Uma descrição..."><!-- adiciona uma descricao -->
+    <meta name="author" content="Luis Fellipe"><!-- adiciona o autor -->
+    <meta name="keywords" content="HTML, CSS, JavaScript"><!-- adiciona palavras chave relacionadas ao conteudo da pagina -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- configura a responsividade -->
+
+    <title>Aprendendo HTML</title><!-- titulo da aba -->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"><!-- fav icon -->
+
+    <!-- estilo aplicado com regras direto no head -->
+    <style>
+        h1 {
+            text-decoration: line-through;
+        }
+    </style>
+
+    <!-- estilo adicionado a pagina vindo de outra fonte -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script com corpo direto no html -->
+    <script>
+        /* o codigo abaixo exibe uma mensagem no console do navegador */
+        console.log('Isso exibe um texto no console');
+    </script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- script de outra fonte -->
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- conjunto de itens para um menu de navegacao -->
+    <a href="index.html">Aula HTML<span class="material-symbols-outlined">chevron_right</span></a>
+    <a href="aulacss.html">Aula CSS</a>
+    <a href="formularios.html">Aula Forms</a>
+    <a href="acessibilidade.html">Aula de Acessibilidade</a>
+
+
+    <!-- comentario -->
+
+    <h1 style="font-family: 'Roboto', sans-serif;">Título</h1>
+
+    <h2>Parágrafos</h2>
+
+    <p>Parágrafo</p>
+
+    <p>
+        Esse parágrafo
+        tem varias quebras de linha
+        no codigo fonte,
+        mas o navegador
+        ignora.
+    </p>
+
+    <p>
+        Rosas     são vermelhas.
+        Violetas     são azuis.
+        Alguns   poemas rimam.
+        Esse não.
+    </p>
+
+    <pre><!-- texto pre formatado -->
+        Rosas são vermelhas.
+        Violetas são azuis.
+        Alguns poemas rimam.
+        Esse não.
+    </pre>
+
+    <!-- exemplo lorem -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nemo provident vero ex facere. Ipsa voluptate mollitia illum? Quae nemo nobis sequi in sit repellat aliquid eaque, necessitatibus quod expedita.</p>
+
+    
+
+    <h2>Links</h2>
+
+    <a href="https://www.w3schools.com/">Isso é um link</a>
+    <br><!-- isso quebra uma linha -->
+    <a href="https://www.w3schools.com/" target="_blank">Link que abre em outra aba</a>
+    <br>
+    <a href="mailto:exemplo@gmail.com">Link para enviar email</a>
+    <br>
+    <a href="tel:98912345678">Link que abre o app de discagem</a>
+    <br>
+    <a href="https://www.instagram.com" title="Vá para o Instagram">Link com dica</a>
+    <hr><!-- isso cria uma linha horizontal -->
+    <h2>Imagens</h2>
+
+    <!-- imagem com fonte externa de uma API -->
+    <img src="https://source.unsplash.com/random/1920x1080/?sky" alt="imagem de teste" width="200px" height="200px">
+
+    <!-- imagem com fonte interna nas pastas do projeto -->
+    <img src="imgs/grito.png" alt="quadro o grito" width="200px" height="200px">
+
+    <!-- exemplo de imagem com erro para que o alt apareca -->
+    <img src="" alt="imagem com erro">
+
+    <hr>
+    <h2>Listas</h2>
+
+    <h3>lista de compras</h3>
+    <ul style="list-style-type: square;"><!-- mudando o estilo da lista -->
+        <li>cafe</li>
+        <li>leite</li>
+        <li>acucar</li>
+        <ul><!-- lista dentro da lista -->
+            <li>cha preto</li>
+            <li>cha verde</li>
+        </ul>
+    </ul>
+
+    <h3>esportes mais populares</h3>
+    <ol type="I" start="50"><!-- mudando estilo e inicio da contagem -->
+        <li>futebol</li>
+        <li>basquete</li>
+        <li>tenis</li>
+    </ol>
+
+    <h3>conceitos</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para web</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem para estilização</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Tabelas</h2>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Fulano</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Outro</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Propriedades</h2>
+
+    <p style="color: red; background-color: aqua;">Texto Vermelho</p><!-- style aplicando css para trocar a cor da letra -->
+
+    <p title="Uma dica de contexto / tooltip">Texto com dica</p>
+
+    <p title="Anderson 'Spider' Silva">Aspas Simples</p>
+    <p title='Anderson "Spider" Silva'>Aspas Duplas</p>
+
+    <p class="nomeDaClasse">Paragrafo com classe</p>
+    <p class="nomeDaClasse outraClasse">Paragrafo com 2 classes</p>
+    <p id="nomeDoId">Paragrafo com ID</p>
+    <p class="nomeDaClasse" id="nomeDoId">Paragrafo com classe e id</p>
+
+    <hr>
+
+    <h2>Formatação de Texto</h2>
+
+    <!-- varias marcacoes usadas em um texto para mudar sua formatacao -->
+    <p>Lorem <strong>ipsum</strong> dolor, sit amet <em>consectetur</em> adipisicing elit. Quia <mark>omnis</mark> impedit provident quasi saepe aspernatur sint <small>dolorum</small>, <del>dolorem</del>, illum consequatur <sub>accusantium</sub> commodi <sup>voluptate</sup> soluta accusamus reprehenderit odio quo quae!</p>
+
+    <hr>
+
+    <h2>Elementos de Citação</h2>
+
+    <!-- bloco de citacao -->
+    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, itaque ipsum doloremque, amet, doloribus unde eligendi vitae impedit dolor non nobis! Similique et necessitatibus blanditiis at distinctio esse eaque harum?</blockquote>
+
+    <!-- citacao curta -->
+    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque eum, delectus magni nihil, dolorum tenetur repellat libero quidem animi, obcaecati ab amet autem. Officiis doloribus optio ex omnis odit.</q>
+
+    <!-- abreviacao -->
+    <p>O <abbr title="Hypertext Markup Language">HTML</abbr> é a linguagem de marcação que usamos para construir páginas na internet.</p>
+
+    <!-- enderecos -->
+    <address>
+        SENAC.<br>
+        Nos Visite em:<br>
+        http://www.ma.senac.br/<br>
+        Rua do passeio, 495<br>
+        Brasil<br>
+    </address>
+
+    <!-- outra citacao -->
+    <p><cite>quadro o grito</cite></p>
+
+    <!-- escrita -->
+    <bdo dir="rtl">Escreva ao contrario</bdo>
+    
+    <hr>
+
+
+ 
+
+
+</body>
+</html>

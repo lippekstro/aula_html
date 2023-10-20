@@ -1,0 +1,210 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto&display=swap');
+
+/* comentario */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pixelify Sans', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(189, 183, 107, 0.369);
+    /* background-image: url('../imgs/grito.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed; */
+}
+
+h1 {
+    color: darkcyan;
+}
+
+.nomeDaClasse {
+    text-decoration: underline;
+}
+
+.outraClasse {
+    color: white;
+}
+
+#nomeDoId {
+    border: 1px solid black;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+div p {
+    background-color: yellowgreen;
+}
+
+div>p {
+    color: blue;
+}
+
+div+p {
+    text-decoration: line-through;
+}
+
+div~p {
+    font-weight: bold;
+}
+
+#parah:hover {
+    color: red;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 5px dotted purple;
+}
+
+.elementos::first-line {
+    color: blue;
+}
+
+.elementos::first-letter {
+    font-size: xx-large;
+    color: green;
+}
+
+.elementos::selection {
+    background-color: chartreuse;
+}
+
+li::marker {
+    color: red;
+}
+
+a[target].atributos {
+    color: aqua;
+}
+
+a[target='_blank'].atributos {
+    color: green;
+}
+
+.cor-fundo {
+    width: 50%;
+    height: 300px;
+    background-color: rgb(51, 207, 207);
+}
+
+.fonte-diferente {
+    font-family: cursive;
+    text-decoration: none;
+    /* para remover a decoracao da regra la de cima */
+}
+
+.fonte-grande {
+    font-size: 4vw;
+}
+
+.alinha-centro {
+    text-align: center;
+}
+
+.imagem-fundo {
+    background-image: url('../imgs/grito.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+table,
+ th,
+ td {
+    border: 1px solid blue;
+    /* border-radius: 10px; */
+   /*  border-collapse: collapse; */
+}
+
+.margem {
+    margin: 50px;
+}
+
+.espacamento {
+    padding: 50px;
+}
+
+.dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+.posicao-relativa {
+    position: relative;
+    left: 200px;
+    top: 40px;
+}
+
+.posicao-absoluta {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.posicao-fixed {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+}
+
+/* .posicao-sticky {
+    position: sticky;
+    top: 1%;
+} */
+
+.centralizada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.flex-item,
+.grid-item {
+    width: 150px;
+    height: 10vh;
+    background-color: blueviolet;
+    margin: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.alto {
+    height: 15vh;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* align-content: center; */
+
+}
+
+.grid-container {
+    display: grid;
+    height: 500px;
+    background-color: azure;
+
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}

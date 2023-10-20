@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+
+    <!-- adicionando google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #imgH {
+            opacity: 0.5;
+        }
+
+        #imgH:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Aula HTML</a>
+    <a href="aulacss.html">Aula CSS<span class="material-symbols-outlined">add_circle</span></a>
+    <a href="formularios.html">Aula Forms</a>
+    <a href="acessibilidade.html">Aula de Acessibilidade</a>
+
+    <h1>Seletores</h1>
+
+    <h2>Combinadores</h2>
+
+    <div>
+        <p>
+            esse p é filho de uma div e pelo css todo p descendente tem cor de fundo amarela e todo filho direto tem
+            letra azul
+        </p>
+        <span>
+            <p>esse p é neto de uma div e pelo css todo p descendente tem cor de fundo amarela</p>
+        </span>
+    </div>
+
+    <p>
+        esse p é irmao de uma div e pelo css todo p irmao de div tem a fonte negrito e se for o irmao mais proximo a
+        fonte estara riscada
+    </p>
+
+    <p>
+        esse p é irmao da div tambem e pelo css todo p irmao de div tem a fonte negrito
+    </p>
+
+    <hr>
+
+    <h2>Pseudo Classes</h2>
+
+    <p id="parah">Esse paragrafo tem uma regra de hover</p>
+
+    <input type="text" name="teste" id="teste" class="form-input">
+
+    <hr>
+
+    <h2>Pseudo Elementos</h2>
+
+    <p class="elementos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta corrupti, architecto,
+        tempore error ad rerum quos omnis, quo vel deleniti fugiat maiores aut delectus molestiae est. Aspernatur,
+        recusandae ad!</p>
+
+    <hr>
+
+    <h2>Seletor por Atributos</h2>
+
+    <a href="" class="atributos" target="_self">Link com target</a>
+    <a href="" class="atributos" target="_blank">Link com target blank</a>
+    <a href="" class="atributos">Link sem target</a>
+
+    <hr>
+
+    <h2>Algumas propriedades CSS</h2>
+
+   <!--  <div style="width: 50%; background-color: aqua;"> -->
+        <div class="cor-fundo posicao-sticky"></div>
+  <!--   </div> -->
+
+
+    <p class="fonte-diferente">ESSA FONTE É DE UMA FAMILIA DIFERENTE</p>
+
+    <p class="fonte-grande">ESSA FONTE TEM TAMANHO MAIOR</p>
+
+    <p class="alinha-centro">Texto no centro</p>
+
+    <div class="cor-fundo imagem-fundo"></div>
+
+    <table class="tabela margem"> <!-- testar a classe margem -->
+        <tr>
+            <th class="">nome</th> <!-- usar a classe espacamento -->
+            <th>idade</th>
+        </tr>
+
+        <tr>
+            <td>fulano</td>
+            <td>30</td>
+        </tr>
+
+    </table>
+
+    <div style="width: 200px; height: 100px; border: 1px solid black; margin: 10px; overflow: auto;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum est expedita sequi quae error
+            veritatis dolores, tenetur minus, deleniti aspernatur neque obcaecati architecto quo! Eveniet rem est quos
+            at?</p>
+    </div>
+
+    <hr>
+
+    <h2>Fontes</h2>
+
+    <p class="dancing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium possimus ad numquam
+        exercitationem deleniti amet. Nihil eaque facilis veritatis quia, illum incidunt fuga, aut laboriosam quis
+        obcaecati optio expedita quae.</p>
+
+    <hr>
+
+    <h2>Icones <span class="material-symbols-outlined">favorite</span></h2>
+
+    <span class="material-symbols-outlined">search</span>
+    <span class="material-symbols-outlined">arrow_forward</span>
+
+    <hr>
+
+    <h2>Layout</h2>
+
+    <h3>Position</h3>
+    <div class="posicao-relativa cor-fundo margem"></div>
+
+    <div class="posicao-relativa cor-fundo margem">
+        <div class="posicao-absoluta"></div>
+    </div>
+
+    <!-- <div class="cor-fundo posicao-fixed"></div> -->
+
+    <hr>
+
+    <h3>Float e Clear</h3>
+    <img src="imgs/grito.png" alt="" style="float: right;">
+    <p style="clear: both;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia distinctio animi,
+        velit dolores earum provident hic sequi exercitationem reprehenderit tempora temporibus voluptas sunt fugit
+        commodi corporis error aliquid cupiditate!</p>
+
+
+    <img id="imgH" src="imgs/grito.png">
+    <hr>
+
+    <h3>Flexbox</h3>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item alto">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+    </div>
+
+    <hr>
+
+    <h3>Grid</h3>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item alto">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <hr>
+
+
+</body>
+
+</html>

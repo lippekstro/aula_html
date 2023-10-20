@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            /* tiro todas as margens */
+            padding: 0;
+            /* tiro todos os paddings */
+            box-sizing: border-box;
+            /* calcula os tamanhos ja considerando margens, paddings, bordas e conteudo */
+        }
+
+        .card-container {
+            display: grid;
+            /* transformo esse container em um layout grid */
+            gap: 2rem;
+            /* coloco espacamento entre linhas e colunas */
+            margin: 1rem;
+            /* coloco uma margem externa para desapegar da "parede" */
+        }
+
+        .card {
+            border: 1px solid black;
+            /* borda do card */
+            box-shadow: 5px 5px 5px black;
+            /* sombra */
+        }
+
+        .card-content {
+            text-align: center;
+            /* alinha texto do card */
+            padding: 1rem;
+            /* padding entre o texto e as bordas */
+            text-transform: uppercase;
+            /* deixa as letras maiusculas */
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            /* regras para tela de no maximo 600px de largura */
+            body {
+                background-color: bisque;
+                /* cor da pagina */
+            }
+
+            .card-container {
+                grid-template-columns: auto;
+                /* layout de 1 coluna */
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* regras para tela de a partir de 600px de largura */
+            body {
+                background-color: burlywood;
+            }
+
+            .card-container {
+                grid-template-columns: auto auto;
+                /* layout de 2 colunas */
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* regras para tela a partir de  768px de largura */
+            .card-container {
+                grid-template-columns: auto auto auto;
+                /* layout de 3 colunas */
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            /* regras para tela a partir de 1200px de largura */
+            .card-container {
+                grid-template-columns: auto auto auto auto;
+                /* layout de 4 colunas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="card-container">
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+
+        <!-- abaixo copiei e colei o mesmo card varias vezes para preencher a pagina -->
+
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        <div class="card"> <!-- aqui tenho a estrutura do card -->
+            <div>
+                <img src="https://source.unsplash.com/random/1920x1080/?programming" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                lorem ipsum
+            </div>
+        </div><!-- tudo isso ate aqui significa 1 card -->
+        
+    </section>
+
+    <!-- texto responsivo -->
+    <h1 style="font-size: 10vw;">ISSO É UM TEXTO RESPONSIVO</h1>
+
+    <!-- tag picture para colocar diferentes imagens para diferentes tamanhos de tela -->
+    <picture>
+        <source srcset="imgs/fims.jpg" media="(min-width: 1200px)">
+        <source srcset="imgs/grito.png" media="(min-width: 600px)">
+        <img src="imgs/favicon.ico" alt="" width="100%">
+    </picture>
+
+    <!-- imagem responsiva -->
+    <img src="imgs/grito.png" alt=""  style="max-width: 100%;">
+
+
+</body>
+
+</html>

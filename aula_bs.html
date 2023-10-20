@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+    <!-- css do BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- js do BS, adicionei a propriedade defer para que a pagina carregue primeiro e depois o JS carregue -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <!-- define que é uma navbar: isso inclui varias configuracoes css -->
+        <!-- alem disso indica que ela explande em telas grandes, por fim adiciona uma cor de fundo -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- um container que preeenche toda a largura disponivel -->
+            <div class="container-fluid">
+                <!-- estiliza o logo/nome -->
+                <a class="navbar-brand" href="#">NOME/LOGO DA EMPRESA</a>
+                <!-- um botao de alternancia exibido em telas menores -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- agrupa os itens quando a tela for pequena / alinha os itens no fim / margens laterais -->
+                <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarNavDropdown">
+                    <!-- estiliza a lista nao ordenada para conter os links de navegacao -->
+                    <ul class="navbar-nav">
+                        <!-- estiliza cada link da navegacao -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <!-- um link de navegacao que tem um menu suspenso -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <!-- conteudo do menu suspenso -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Roupas</a></li>
+                                <li><a class="dropdown-item" href="#">Acessorios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-evenly">
+            <!-- A classe "row" do Bootstrap cria uma linha para organizar elementos em colunas. As classes "row-cols-X" definem o número de colunas por linha para diferentes tamanhos de tela (X representa o tamanho da tela). -->
+            <!-- A classe "justify-content-evenly" alinha horizontalmente as colunas de forma que haja espaço igual entre elas, distribuindo o espaço vazio de maneira uniforme. -->
+
+            <div class="col my-3">
+                <!-- A classe "col" do Bootstrap define uma coluna flexível. A classe "my-3" aplica margem vertical ao elemento para espaçamento. -->
+                <div class="card w-100">
+                    <!-- A classe "card" do Bootstrap é usada para criar um componente de cartão. A classe "w-100" define a largura do cartão como 100% do elemento pai. -->
+                    <img src="https://source.unsplash.com/random/1920x1080/?sky" class="card-img-top" alt="...">
+                    <!-- A classe "card-img-top" é usada para posicionar a imagem no topo do cartão. O atributo "alt" é usado para texto alternativo para acessibilidade. -->
+                    <div class="card-body">
+                        <!-- A classe "card-body" envolve o conteúdo principal do cartão. -->
+                        <h5 class="card-title">Card title</h5>
+                        <!-- A classe "card-title" é usada para estilizar o título do cartão. -->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- A classe "card-text" é usada para estilizar o texto do cartão. -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- As classes "btn" e "btn-primary" são usadas para estilizar um botão de ação no cartão. -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col my-3">
+                <div class="card w-100">
+                    <img src="https://source.unsplash.com/random/1920x1080/?sky" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card w-100">
+                    <img src="https://source.unsplash.com/random/1920x1080/?sky" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card w-100">
+                    <img src="https://source.unsplash.com/random/1920x1080/?sky" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
